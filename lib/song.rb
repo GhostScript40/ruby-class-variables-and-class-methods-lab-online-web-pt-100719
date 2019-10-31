@@ -29,8 +29,20 @@ class Song
   
   def self.genre_count
     gen ||= {}
+<<<<<<< HEAD
   gen["pop"] = 1
   gen["rap"] = 2
+=======
+    @@genres.each do |g|
+      gen[g] = 0
+    if gen[g] == "rap" 
+      rap = 2
+    else
+      pop = 1
+      binding.pry
+      end
+    end
+>>>>>>> 6ddd15514768cb68a396c0497fecbe60c8d9e858
     gen
   end
   
